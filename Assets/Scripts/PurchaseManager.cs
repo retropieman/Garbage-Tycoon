@@ -37,11 +37,14 @@ namespace storez {
 
         public void BuyItem(GameObject ShopBtn)
         {
-
+            
             GameObject tSell = ShopBtn.GetComponent<dangit.ShopBuy>().toSell;
-            balance = tSell.GetComponent<shopz.PurchaseItem>().Buy(balance);
-            UpScore();
-            ShopBtn.SetActive(false);
+            if (balance >= tSell.GetComponent<shopz.PurchaseItem>().price)
+            {
+                balance = tSell.GetComponent<shopz.PurchaseItem>().Buy(balance);
+                UpScore();
+                ShopBtn.SetActive(false);
+            }
         
 
         }

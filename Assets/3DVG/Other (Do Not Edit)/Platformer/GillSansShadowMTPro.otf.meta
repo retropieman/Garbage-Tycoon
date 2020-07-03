@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 110e6f96420c23448a15818efe0ea51c
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gill Sans Shadow MT Pro
+  fontNames:
+  - Gill Sans Shadow MT Pro
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 3dvg minimum
+  assetBundleVariant: 

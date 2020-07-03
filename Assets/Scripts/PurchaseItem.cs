@@ -9,14 +9,14 @@ namespace shopz
     {
         public GameObject Objecttosell;
         public int price;
-        public bool Canbesold;
+        public bool notownedyet;
         public String title;
 
 
         // Start is called before the first frame update
         void Start()
         {
-            Objecttosell.SetActive(!Canbesold);
+            Objecttosell.SetActive(!notownedyet);
         }
 
         // Update is called once per frame
@@ -27,9 +27,10 @@ namespace shopz
 
         public int Buy(int money)
         {
-            if (money >= price && Canbesold)
+            if (money >= price && notownedyet)
             {
                 Objecttosell.SetActive(true);
+                notownedyet = false;
                 return money - price;
 
             }
